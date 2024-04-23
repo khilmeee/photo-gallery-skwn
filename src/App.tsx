@@ -40,15 +40,12 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/camera">
-            <Camera />
-          </Route>
           <Route exact path="/">
-            <Redirect to="/camera" />
+            <Camera />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="camera" href="/camera">
+          <IonTabButton tab="camera" href="/">
             <IonIcon icon={images} />
             <IonLabel>Camera</IonLabel>
           </IonTabButton>
